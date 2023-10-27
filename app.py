@@ -3,6 +3,7 @@ import pandas as pd
 import plotly_express as px
 
 car_data = pd.read_csv('vehicles.csv')
+
 st.header('Dados dos veículos')
 
 hist_button = st.button('Criar histograma') 
