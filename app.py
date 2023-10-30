@@ -7,7 +7,7 @@ car_data = pd.read_csv('vehicles.csv')
 
 st.header('Dados dos veículos')
 
-car_data = pd.DataFrame(np.random.randn(10, 13), columns=("col %d" % i for i in range(14)))
+car_data = pd.DataFrame(np.random.randn(10, 12), columns=("col %d" % i for i in range(12)))
 st.table(car_data)
 
 hist_button = st.button('Criar histograma') 
