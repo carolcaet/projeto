@@ -7,7 +7,6 @@ car_data = pd.read_csv('vehicles.csv')
 
 st.header('Dados dos veículos')
 
-car_data = pd.DataFrame(np.random.randn(50, 20), columns=("col %d" % i for i in range(20)))
 st.table(car_data)
 
 hist_button = st.button('Criar histograma') 
@@ -22,7 +21,7 @@ if hist_button:
 disp_button = st.button('Criar gráfico de dispersão')
 
 if disp_button:
-    st.write('Gráfico de dispersãopara o conjunto de dados de anúncios de vendas de carros')
+    st.write('Gráfico de dispersão para o conjunto de dados de anúncios de vendas de carros')
     
     fig = px.scatter(car_data, x="odometer", y="price")
 
